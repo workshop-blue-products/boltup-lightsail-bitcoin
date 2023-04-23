@@ -5,5 +5,8 @@ cd $APP_DIR
 
 apt-get update
 
-BTCVER="bitcoin-core-24.0.1"
-wget https://bitcoincore.org/bin/$BTCVER/$BTCVER-x86_64-linux-gnu.tar.gz -O bitcoin-core.tgz
+BTCURL="https://bitcoincore.org/bin/bitcoin-core-24.0.1/bitcoin-24.0.1-x86_64-linux-gnu.tar.gz"
+wget $BTCURL -O bitcoin-core.tgz
+mkdir /opt/bitcoin
+tar -zxvf bitcoin-core.tgz -C /opt/bitcoin --strip-components=1
+
