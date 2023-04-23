@@ -3,4 +3,4 @@
 BLOCK_DATE=`sudo tail -n 1  /bitcoin/debug.log | awk -F " " '{print $9}' | awk -F "'" '{print $2}'`
 PROGRESS=`sudo tail -n 1  /bitcoin/debug.log | awk -F " " '{print $10}' | awk -F "=" '{print $2}'`
 
-echo $BLOCK_DATE | $PROGRESS
+echo "$BLOCK_DATE | $PROGRESS"
