@@ -1,0 +1,9 @@
+#!/bin/bash
+
+APP_DIR=/home/ubuntu/
+cd $APP_DIR
+
+apt-get update
+
+BTCVER="bitcoin-core-24.0.1"
+wget https://bitcoincore.org/bin/$BTCVER/$BTCVER-x86_64-linux-gnu.tar.gz -O bitcoin-core.tgz
