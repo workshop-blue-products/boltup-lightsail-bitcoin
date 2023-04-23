@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REPO="git@github.com:workshop-blue-products/boltup-lightsail-bitcoin.git"
+REPO="https://github.com/workshop-blue-products/boltup-lightsail-bitcoin.git"
 APP_DIR=/home/ubuntu/
 cd $APP_DIR
 git clone $REPO
