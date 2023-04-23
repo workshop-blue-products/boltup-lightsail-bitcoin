@@ -5,3 +5,12 @@ APP_DIR=/home/ubuntu/
 cd $APP_DIR
 git clone $REPO
 
+sudo apt-get update
+sudo apt-get install supervisor
+
+BTCURL="https://bitcoincore.org/bin/bitcoin-core-24.0.1/bitcoin-24.0.1-x86_64-linux-gnu.tar.gz"
+wget $BTCURL -O bitcoin-core.tgz
+sudo mkdir /opt/bitcoin
+sudo tar -zxvf bitcoin-core.tgz -C /opt/bitcoin --strip-components=1
+
+sudo mkdir /bitcoin

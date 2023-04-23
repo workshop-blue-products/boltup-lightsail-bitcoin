@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo mkdir /bitcoin
+sudo mkfs.ext4 /dev/xvdf -F
+sudo echo "/dev/xvdf /bitcoin ext4" >> /etc/fstab
+sudo mount /bitcoin
+
