@@ -14,3 +14,5 @@ sudo mkdir /opt/bitcoin
 sudo tar -zxvf bitcoin-core.tgz -C /opt/bitcoin --strip-components=1
 
 sudo mkdir /bitcoin
+
+sudo cp bitcoin.conf /etc/
