@@ -6,7 +6,8 @@ cd $APP_DIR
 apt-get update
 apt-get install supervisor
 
-mkfs.ext4 /dev/xvdf
+mkdir -f /bitcoin
+mkfs.ext4 /dev/xvdf -y
 echo "/dev/xvdf /bitcoin ext4" >> /etc/fstab
 mount /bitcoin
 
