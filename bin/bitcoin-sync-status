@@ -1,0 +1,6 @@
+#!/bin/bash
+
+BLOCK_DATE=`tail -n 1  /bitcoin/debug.log | awk -F " " '{print $9}' | awk -F "'" '{print $2}'`
+PROGRESS=`tail -n 1  /bitcoin/debug.log | awk -F " " '{print $10}' | awk -F "=" '{print $2}'`
+
+echo $BLOCK_DATE | $PROGRESS
