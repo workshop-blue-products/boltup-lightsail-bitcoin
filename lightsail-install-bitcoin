@@ -4,6 +4,11 @@ APP_DIR=/home/ubuntu/
 cd $APP_DIR
 
 apt-get update
+apt-get install supervisor
+
+mkfs.ext4 /dev/xvdf
+echo "/dev/xvdf /bitcoin ext4" >> /etc/fstab
+mount /bitcoin
 
 BTCURL="https://bitcoincore.org/bin/bitcoin-core-24.0.1/bitcoin-24.0.1-x86_64-linux-gnu.tar.gz"
 wget $BTCURL -O bitcoin-core.tgz
